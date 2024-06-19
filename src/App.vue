@@ -1,12 +1,16 @@
-<template>
-  <main>
-   <RouterView></RouterView>
-  </main>
-  
-  </template>
-  <script>
+<script setup>
+
 import { RouterView } from 'vue-router';
-
-
+import Navbar from './components/Navbar.vue';
 
 </script>
+
+<template>
+  <v-app>
+ <Navbar/>
+  <v-main>
+   <RouterView></RouterView>
+  </v-main>
+</v-app>
+  </template>
+ 

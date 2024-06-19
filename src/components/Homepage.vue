@@ -1,6 +1,6 @@
 <script>
-     
-     data() 
+    export default{
+     data() {
      return {
         message: "Hello World!",
         product: 'Sweets',
@@ -27,8 +27,8 @@
         ],
         totalStock: 100
       }
-    
-        
+    }
+      }  
         
         
     </script>
