@@ -32,8 +32,8 @@
     }
       }  
         
-        
-    </script>
+         </script>
+
 <template>
     <h1>My Candy Shop</h1>
     <div class="center">
@@ -46,7 +46,7 @@
     </div>
     <div class="center">
         <ul>
-          <li :key="item" v-for="(item, index) in stockDetails">
+          <li :key="item" v-for="item in stockDetails">
             <div>
               <img v-bind:src="image" width="200" height="150"> 
             </div>
