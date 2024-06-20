@@ -35,28 +35,28 @@
          </script>
 
 <template>
-    <h1>My Candy Shop</h1>
-    <div class="center">
-        <img v-bind:src="image" width="500" height="300">
-    </div>
-    <div class="center">
-        <a :href="url">Vue JS Practice</a>
-        <h3>Milk,white,dark</h3>
-        <h5>A wide variety of fine snacks,sweets and chocolates perfect for all occasions</h5>
-    </div>
-    <div class="center">
-        <ul>
-          <li :key="item" v-for="item in stockDetails">
-            <div>
-              <img v-bind:src="image" width="200" height="150"> 
-            </div>
-            <div>
-                    <span>{{ item.itemName }}</span> &nbsp; &nbsp;
-                    <span> <button style="background-color: aqua; color: bisque; border: violet;"> +</button></span>
-            </div>
-            <br>
-                 </li>  
-        </ul> 
-    </div>
+  <v-card
+    class="mx-auto"
+    width="400"
+  >
+
+    <v-carousel>
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+    cover
+  ></v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+    cover
+  ></v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+    cover
+  ></v-carousel-item>
+</v-carousel>
+    </v-card>
+      
     </template>
     
