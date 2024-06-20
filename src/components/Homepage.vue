@@ -2,31 +2,33 @@
     export default{
      data() {
      return {
-        message: "Hello World!",
-        product: 'Sweets',
-        image: 'vinicius-amnx-amano-dbOV1qSiL-c-unsplash.jpg',
+        image: '../images/vinicius-amnx-amano-dbOV1qSiL-c-unsplash.jpg',
         url: 'https://www.vuejs.org/',
-        //simple array demo
-        stock: ["Sweets", "Lollipop", "Chocolates", "Chewing Gum"],
-        //Object demo
         stockDetails : [
             {
                 itemNumber: 1,
                 itemName : "Sweets",
                 itemPrice : 5,
                 itemQuantity : 30,
-                itemImage: 'customerbox-aXq1oCCjlVM-unsplash.jpg'
+                itemImage: '../images/customerbox-aXq1oCCjlVM-unsplash.jpg'
             },
             {
                 itemNumber: 27466,
                 itemName : "Lollipop",
                 itemPrice : 10,
                 itemQuantity : 4,
-                itemImage: 'jamie-albright-AHF_ZktTL6Q-unsplash.jpg'
+                itemImage: '../images/jamie-albright-AHF_ZktTL6Q-unsplash.jpg'
             }
         ],
-        totalStock: 100
       }
+    },
+
+    methods() {
+      // we shall add our functions here
+    },
+
+    computed(){
+      //we use this when wotrking with forms
     }
       }  
         
