@@ -12,9 +12,9 @@
 
 
 <v-btn to="/products">Products</v-btn>
-<v-btn to="/aboutus">About Us</v-btn>
-<v-btn to="/contactus">Contact Us</v-btn>
-<v-btn to="/services">Services Offered</v-btn>
+<v-btn to="/aboutus">AboutUs</v-btn>
+<v-btn to="/contactus">ContactUs</v-btn>
+<v-btn to="/services">ServicesOffered</v-btn>
 <v-btn to="/cart">Cart</v-btn>
 </v-app-bar>
 </template>

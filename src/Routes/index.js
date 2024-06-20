@@ -19,13 +19,13 @@ const routes = [
         component: Products,
       },
       {
-        path: '/about',
-        name: 'about',
+        path: '/aboutus',
+        name: 'aboutus',
         component: AboutUs,
       },
       {
-        path: '/contact',
-        name: 'contact',
+        path: '/contactus',
+        name: 'contactus',
         component: ContactUs,
       },
       {
