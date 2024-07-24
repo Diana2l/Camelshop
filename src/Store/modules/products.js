@@ -97,22 +97,34 @@ const state ={
 
     }
 ],
+allProducts:[]
+}
+const getters = {
+	stock: (state) => state.allProducts,
+}
+const actions = {
+	
+	async fetchProducts({ commit }) {
+		try {
+		  const data = await axios.get(
+			"https://back3nd.onrender.com/api/products" // base url + endpoint
+		  );
+		  commit("SET_PRODUCTS", data.data);
+		} catch (error) {
+		  alert(error);
+		  console.log(error);
+		}
+	  },
 
 }
-const getters ={
-   stock: (state) => state.stockDetails
+const mutations = {
+	SET_PRODUCTS (state, allProducts) {
+		state.allProducts = allProducts //this will modify the all products state
+	}
 }
-const actions ={
-
-}
-const mutations ={
-
-}
-
-export default{
-    state,
-    getters,
-    actions,
-    mutations,
-
+export default {
+	state,
+	getters,
+	actions,
+	mutations
 }

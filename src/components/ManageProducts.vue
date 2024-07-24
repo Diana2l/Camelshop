@@ -100,7 +100,7 @@
             save(){
                 try {
                     axios
-                    .post('http://127.0.0.1:8000/api/products', this.newProduct)
+                    .post('https://back3nd.onrender.com/api/products', this.newProduct)
                     .then((response) => console.log(response))
                     this.fetchProducts()
                     this.add_dialog = false
